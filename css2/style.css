@@ -1,0 +1,74 @@
+ body{
+            background-color: forestgreen;
+        }
+        #banner{
+            width:100%; height:435px;
+            background-image: url('images/wildlife-banner.jpg');
+            text-align: center;
+        }
+        
+        #banner h1{
+            font:trebuchet;font-size:6em; padding-top:10%;
+            color:chocolate; text-shadow:2px 2px 4px #000000;
+            
+        }
+        ul{
+            width:100%
+        }
+        ul li{
+            list-style-image:none; 
+            display:inline;
+            padding-right:10%;
+        
+        }
+        
+        #nav {
+            text-align: center; 
+        }
+        
+        #nav a{
+        text-decoration:none;
+        font-size:2em; 
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;   
+        color:gold;
+        background-color: chocolate;
+        }
+        p{
+            font-size:1.3em;
+        }
+        #footer{
+            text-align:center;
+            padding-top:2%;
+        }
+
+div#detail {
+text-align:center;
+font-size:1.5em; 
+width:80%; 
+margin:auto;
+}
+
+#detail h2 {
+color:gold; 
+font-size:2em;
+}
+
+#detail img {
+float:right; 
+padding-left:2%;
+}
+
+#caption {
+color:white; 
+width:100%; 
+text-align:left;
+}
+
+#footer {
+clear:both;
+text-align:center;
+color:gold; 
+padding-top:"2%"
+}
