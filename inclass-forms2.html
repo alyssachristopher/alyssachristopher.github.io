@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     <title> In-Class Forms </title>
+
+<style>
+body {
+background-color:cadetblue;
+}
+#content{
+width:90%;
+margin:auto;
+text-align:center;
+}
+
+form {
+font-size:1.5em;
+margin-left:5%;
+padding-top:5%;
+background-color: cornsilk;
+border:2px dotted #000;
+}
+input {
+margin-bottom:2%;
+font-size: 1em;
+}
+input#submit {
+border:4px solid yellow;
+border-radius: 50px 50px;
+text-align: center;
+background-color:chocolate;
+color:white;
+font-weight:bold;
+padding: 20px;
+}
+
+#submit:hover {
+background-color:cornsilk;
+color:chocolate;
+font-size:150%;
+border:2px solid black;
+}
+</style>
+
+<script>
+
+function myConfirmation(){
+var name=document.getElementById("name").value;
+alert("Hey" + name + ", you've really done it now, you are going to be redirected to a sketchy site!");
+return;
+} 
+ 
+function myPageLoad(){
+alert("The page is now loaded!");
+return;
+}
+
+</script>
+</head>
+
+<body onload="myPageLoad()">
+<div>
+<form action="https://idesstage2.bc.edu/class/results.php" method=post onsubmit="return myConfirmation();">
+
+<div>First Name: <input type="text" name="firstname" id="name"></div>  
+<div>Last Name: <input type="text" name="lastname"></div>
+Email: <input type="text" name="email">
+
+<div>My tolerance for writing html:
+<br>(0=lowest; 100=highest)<br>
+<input type="range" name="range" min="0" max="100" onchange="showValue(this.value)" value=this.valueAsNumber>
+<div id="range"> 0 </div>
+
+Favorite Ice Cream: <input type="text" name=favoriteicecream">
+<div>What Do you want to do with your life: <textarea name="whatdoyouwanttodowithyourlife"> </textarea></div>
+<input id="submit" type="submit" name="submit" value="Submit">  
+
+</form>
+</div>
+
+<script>
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+
+</body>
+</html>
